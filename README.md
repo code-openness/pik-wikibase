@@ -43,6 +43,9 @@ docker-compose stop
 docker-compose down
 ```
 
+## Project structure
+
+
 ## Further reading
 * [Wikibase Docker Repository](https://github.com/wmde/wikibase-docker)
 * [Docker Documentation Website](https://docs.docker.com/)
