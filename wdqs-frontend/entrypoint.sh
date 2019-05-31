@@ -1,5 +1,8 @@
 #!/bin/sh
 # This file is provided by the wikibase/wdqs-frontend docker image.
+# It was copied from
+# https://github.com/wmde/wikibase-docker/tree/57f4d1509375ace2cef6e2c73210f3934895fb75/wdqs-frontend/latest
+
 
 # Test if required environment variables have been set
 if [ -z "$WIKIBASE_HOST" ]; then

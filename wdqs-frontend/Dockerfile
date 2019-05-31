@@ -1,3 +1,7 @@
+# This file was copied from
+# https://github.com/wmde/wikibase-docker/tree/57f4d1509375ace2cef6e2c73210f3934895fb75/wdqs-frontend/latest
+# and modified
+
 FROM ubuntu:xenial as fetcher
 
 RUN apt-get update && \
