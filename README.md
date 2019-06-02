@@ -26,7 +26,7 @@ remove all your running docker containers.
 ```sh
 docker rm -f $(docker ps -a -q)
 ```
-###Remove all of data wikibase contained,inclusive Bots
+### Remove all of data wikibase contained,inclusive Bots
 
 ```sh
 docker-compose down --volumes
