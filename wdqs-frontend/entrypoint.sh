@@ -18,7 +18,7 @@ fi
 set -eu
 
 export DOLLAR='$'
-envsubst < /usr/share/nginx/html/wikibase/config.js > /usr/share/nginx/html/wikibase/config.js
+envsubst < /custom-config.json > /usr/share/nginx/html/custom-config.json
 envsubst < /templates/default.conf > /etc/nginx/conf.d/default.conf
 
 exec "$@"
