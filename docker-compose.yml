@@ -30,6 +30,7 @@ services:
       default:
         aliases:
          - wikibase.svc
+         - aghcc-edu01.imp.fu-berlin.de
          # CONFIG - Add your real wikibase hostname here, for example wikibase-registry.wmflabs.org
     environment:
       - DB_SERVER=mysql.svc:3306
