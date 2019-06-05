@@ -1,0 +1,11 @@
+{
+  "_comment": "These values are hard coded, we might need to use some env vars",
+  "api": {
+    "sparql": {
+      "uri": "/proxy/wdqs/bigdata/namespace/wdq/sparql"
+    },
+    "wikibase": {
+      "uri": "http://localhost:8181/w/api.php"
+    }
+  }
+}
