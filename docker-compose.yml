@@ -149,8 +149,13 @@ services:
       - "WB_PROPERTY_PREFIX=Property:"
       - WB_ITEM_NAMESPACE=120
       - "WB_ITEM_PREFIX=Item:"
-
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
 volumes:
+  - /var/run/docker.sock:/tmp/docker.sock:ro
   mediawiki-mysql-data:
   mediawiki-images-data:
   query-service-data:
