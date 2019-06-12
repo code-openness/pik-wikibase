@@ -33,6 +33,7 @@ services:
          - aghcc-edu01.imp.fu-berlin.de
          # CONFIG - Add your real wikibase hostname here, for example wikibase-registry.wmflabs.org
     environment:
+      - VIRTUAL_HOST=localhost #Change this to your hostname
       - DB_SERVER=mysql.svc:3306
       - MW_ELASTIC_HOST=elasticsearch.svc
       - MW_ELASTIC_PORT=9200
@@ -155,6 +156,7 @@ services:
       - "80:80"
       - "443:443"
 volumes:
+  - /etc/ssl/certs/:/etc/nginx/certs  
   - /var/run/docker.sock:/tmp/docker.sock:ro
   mediawiki-mysql-data:
   mediawiki-images-data:
